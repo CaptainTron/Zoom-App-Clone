@@ -1,0 +1,196 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#video-grid{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+video{
+    margin: 0.3vh;
+    padding: 0;
+    /* height: 32vh; */
+    width: 20vw;
+    border-radius: 1vh;
+    object-fit: cover;
+}
+
+/* Styling Goes Here */
+.Container{
+    display: flex;
+    text-align: center;
+    height: 100vh;
+}
+.left_C{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 36, 36);
+    flex: 0.8;
+}
+.video_C{
+    overflow-y: scroll;
+    flex-grow: 1; 
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 90vh; */
+}
+.Controls_C{
+    overflow: hidden;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8vh;
+}
+.Controls_C div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0.8vh;
+}
+.displayBlock_1 div{
+    margin: 0.6vh;
+    padding: 0.3vh 1.6vh;
+    border-radius: 1vh;
+}
+.displayBlock_1 div:hover{
+    background-color: rgb(58, 57, 57);
+    cursor: pointer;
+}
+.displayBlock_2 div{
+    margin: 0.6vh;
+    padding: 0.3vh 1.6vh;
+    border-radius: 1vh;
+}
+.displayBlock_2 div:hover{
+    background-color: rgb(58, 57, 57);
+    cursor: pointer;
+}
+.displayBlock_3 div{
+    margin: 0.6vh;
+    padding: 0.3vh 1.6vh;
+    border-radius: 1vh;
+}
+.displayBlock_3 div:hover{
+    background-color: rgb(58, 57, 57);
+    cursor: pointer;
+}
+.Leave{
+    width: 7vw;
+}
+.Leave i{
+    color: red;
+}
+.Leave span{
+    color: red;
+    font-weight: bolder;
+    margin: 0.6vh;
+}
+.Right_C{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 45, 45);
+    flex: 0.2;
+}
+/* Text Messages will go here */
+.MessageSection {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* display: flex; */
+    margin: 0vh;
+    flex-grow: 1;
+    text-align: center;
+}
+ul.msg {
+    padding: 0;
+    margin: 0vh;
+    list-style: none;
+}
+ul{
+    margin: 0.5vh;
+    text-align: center;
+
+}
+.microphone{
+    width: 9vw;
+}
+.video{
+    width: 9vw;
+}
+.Right_C h4{
+    margin: 1vh;
+}
+/* This one is for input */
+    .Right_C input {
+        display: flex;
+        width: 100%;
+        /* padding: 1vh; */
+        height: 5vh;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    ::placeholder{
+        color: gray;
+    }
+input:focus{
+        outline: none;
+    }
+.InputMsg{
+    padding: 1vh;
+}
+/* SCroll bar Goes here */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #3b3939;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(100, 98, 98);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  /* Show Popup */
+  .showpopup{
+      background-color: rgb(49, 46, 46);
+      border-radius: 1vh;
+      padding: 2vh 5vh;
+      position: absolute;
+      z-index: 1;
+      color: white;
+      left: 4vw;
+      top: 3vh;
+    }
+    .Message{
+        font-size: 2.5vh;
+        font-weight: bolder;
+        /* letter-spacing: 0.1vh; */
+        /* color: red; */
+  }
+  /* Show/not Show */
+  .Display{
+      display: none;
+  }
+  .DisplayColor{
+      color: red;
+  }
